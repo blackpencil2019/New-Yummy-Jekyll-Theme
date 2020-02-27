@@ -1,59 +1,28 @@
+#remote_theme: blackpencil2019/New-Yummy-Jekyll-Theme
+
 # ---------------- #
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://blackpencil2019.github.io/myblog/
+url: https://blackpencil2019.github.io/New-Yummy-Jekyll-Theme
 date_format: "ordinal"
-title: BLACKPENCIL's CASE
-subtitle: "小铅笔盒子"
-description: "BLACKPENCIL is not black."
+title: My blog
+subtitle: "New-Yummy-Jekyll-Theme"
+description: "New-Yummy-Jekyll-Theme"
 keywords: blackpencil, blog
 timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
-remote_theme: blackpencil2019/myblog
+
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: BLACKPENCIL
+author: blackpencil2019
 organization: 
 organization_url: 
 github_username: blackpencil2019
 location: China
-email: blackpencil2015@gmail.com
-
-# ---------------- #
-#    Navigation    #
-# ---------------- #
-navs:
-  -
-    href: /
-    label: 首页
-
-  -
-    href: /categories/
-    label: 分类
-
-  -
-    href: /archives/
-    label: 归档
-
-  -
-    href: /wiki/
-    label: 维基
-
-  -
-    href: /links/
-    label: 链接
-
-  -
-    href: /about/
-    label: 关于
-
-# ---------------- #
-#       RSS        #
-# ---------------- #
-subscribe_rss: /feed.xml
+email: 
 
 # ---------------- #
 #      Jekyll      #
@@ -81,7 +50,42 @@ collections:
         output: true
         permalink: /wiki/:path/
 
-repository: blackpencil2019/myblog2
+repository: blackpencil2019/New-Yummy-Jekyll-Theme
+
+# ---------------- #
+#  Special effect  #
+# ---------------- #
+se:
+    fireworks: false
+    canvas_nest: true
+    
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: 首页
+  -
+    href: /categories/
+    label: 分类
+  -
+    href: /archives/
+    label: 归档
+  -
+    href: /wiki/
+    label: 维基
+  -
+    href: /links/
+    label: 链接
+  -
+    href: /about/
+    label: 关于
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
 
 # ---------------- #
 #      Comments    #
@@ -95,14 +99,14 @@ disqus:
     username: 
 # https://imsun.net/posts/gitment-introduction/
 gitment:
-    owner: mzlogin
+    owner: 
     repo: blog-comments
     oauth:
         client_id: 
         client_secret: 
 # https://github.com/gitalk/gitalk#install
 gitalk:
-    owner: mzlogin
+    owner: 
     repo: blog-comments
     clientID: 
     clientSecret: 
@@ -123,10 +127,3 @@ simple_jekyll_search:
 # ---------------- #
 google:
     analytics_id: 
-
-# ---------------- #
-#  Special effect  #
-# ---------------- #
-se:
-    fireworks: true
-    canvas_nest: true
