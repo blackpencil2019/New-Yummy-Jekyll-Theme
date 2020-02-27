@@ -1,0 +1,24 @@
+- name: Word spelling
+  keywords:
+      - Java
+      - C++
+      - Python
+      - Pascal
+      - Ruby
+      - etc.
+
+- name: Install and uninstall software
+  keywords:
+      - Ai
+      - Ps
+      - Fl
+      - Ae
+      - Pr
+      - etc.
+
+- name: Turn on/off system
+  keywords:
+      - Windows
+      - Android
+      - Linux
+      - etc.
