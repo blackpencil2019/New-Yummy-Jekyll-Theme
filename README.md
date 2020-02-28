@@ -16,7 +16,13 @@
 
 * 背景效果来自于 [hustcc/canvas-nest.js](https://github.com/hustcc/canvas-nest.js)，感谢！
 
-## 历程
+------
+
+### 2020-02-28
+
+* 使用 remote_theme 成功分离主题和内容
+* 添加全局背景和点击效果
+* 修改了footer的布局
 
 ### 2020-02-25
 
