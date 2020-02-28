@@ -97,7 +97,7 @@
     {% if site.effect.live2d %}
     <div class="pio-container right">
         <div class="pio-action"></div>
-        <canvas id="pio" width="60" height="80"></canvas>
+        <canvas id="pio" width="325" height="300"></canvas>
     </div>
     <!-- 引用 Live2D 核心组件 -->
     <script src='{{ site.url }}/assets/js/src/live2d/static/l2d.js'></script>
@@ -116,7 +116,7 @@
         ]
     },
     "night": "single.night()",
-    "model": ["{{ site.url }}/assets/js/src/live2d/models/pio/model.json"]
+    "model": ["{{ site.url }}/assets/live2d/platelet-2/model.json"]
     });'
     ></script>
     {% endif %}
