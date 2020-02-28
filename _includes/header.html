@@ -21,7 +21,10 @@
     {% for css in page.css %}
     <link rel="stylesheet" href="{{ site.url }}/assets/css/{{css}}">
     {% endfor %}
-
+    {% if site.effect.live2d %}
+    <!-- 引用看板娘交互所需的样式表 -->
+    <link href='{{ site.url }}/assets/js/src/live2d/static/pio.css' rel='stylesheet' type='text/css'/>
+    {% endif %}
     {% if site.ios_app_name %}
        <meta name="apple-mobile-web-app-capable" content="yes">
        <meta name="apple-mobile-web-app-status-bar-style" content="black">
