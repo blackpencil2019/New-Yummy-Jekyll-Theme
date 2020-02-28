@@ -95,28 +95,38 @@
     {% endif %}
     
     {% if site.effect.live2d %}
-    <div class="pio-container right">
+    <div class="pio-container left mobile-hidden" style="right:-75px">
         <div class="pio-action"></div>
         <canvas id="pio" width="325" height="300"></canvas>
+        <div class="pio-dialog" style="right:6em"></div>
+    </div>
+    <div class="pio-container left mobile-visible" style="right:-30px">
+        <div class="pio-action"></div>
+        <canvas id="pio" width="325" height="300"></canvas>
+        <div class="pio-dialog" style="right:9em"></div>
     </div>
     <!-- 引用 Live2D 核心组件 -->
     <script src='{{ site.url }}/assets/js/src/live2d/static/l2d.js'></script>
     <!-- 引用看板娘交互组件 -->
     <script src="{{ site.url }}/assets/js/src/live2d/static/pio.js" onload='
     var pio = new Paul_Pio({
-    "mode": "fixed",
-    "hidden": true,
+    "mode": "static",
+    "hidden": false,
     "content": {
-        "welcome": ["欢迎来到保罗的小宇宙！", "今天天气不错，一起来玩吧！", "博主每天都有些折腾记录，欢迎前往他的小窝阅读~"],
+        "welcome": ["欢迎来到小铅笔的铅笔盒子！", "今天天气不错，一起来玩吧！", "我是小铅笔，傲完就娇的小铅笔~~"],
+        "link": {{ site.url }}
+        "referer": "你通过 %t 找到了我~"
+        "touch": ["你在干什么？", "再摸我就报警了！", "HENTAI!", "你够了喔！"]
         "custom": [
             {"selector": ".comment-form", "text": "欢迎参与本文评论，别发小广告噢~"},
-            {"selector": ".home-social a:last-child", "text": "在这里可以了解博主的日常噢~"},
-            {"selector": ".post-item a", "type": "read"},
-            {"selector": ".post-content a, .page-content a", "type": "link"}
+            {"selector": ".site-header-nav a:last-child", "text": "在这里可以了解更多哦~"},
+            {"selector": ".repo-list-name a", "type": "read"},
+            {"selector": ".container a, .site-header-nav a:first-child", "type": "link"}
         ]
     },
     "night": "single.night()",
     "model": ["{{ site.url }}/assets/live2d/platelet-2/model.json"]
+    "tips": true
     });'
     ></script>
     {% endif %}
