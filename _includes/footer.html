@@ -94,16 +94,15 @@
     <script type="text/javascript" src="{{ site.url }}/assets/js/src/fireworks.js"></script>
     {% endif %}
     
-        {% if site.effect.live2d %}
+    {% if site.effect.live2d %}
+    <div class="pio-container right">
+        <div class="pio-action"></div>
+        <canvas id="pio" width="600" height="800"></canvas>
+    </div>
     <!-- 引用 Live2D 核心组件 -->
     <script src='{{ site.url }}/assets/js/src/live2d/static/l2d.js'></script>
     <!-- 引用看板娘交互组件 -->
-    <script src='{{ site.url }}/assets/js/src/live2d/static/pio.js'></script>
-    <div class="pio-container right">
-    <div class="pio-action"></div>
-    <canvas id="pio" width="600" height="800"></canvas>
-    </div>
-    <script>
+    <script src="{{ site.url }}/assets/js/src/live2d/static/pio.js" onload='
     var pio = new Paul_Pio({
     "mode": "fixed",
     "hidden": true,
@@ -118,8 +117,8 @@
     },
     "night": "single.night()",
     "model": ["https://paugram.com/usr/plugins/Pio/models/yuan/model.json"]
-    });
-    </script>
+    });'
+    ></script>
     {% endif %}
 </body>
 </html>
