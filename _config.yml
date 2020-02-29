@@ -20,7 +20,7 @@ remote_theme: blackpencil2019/New-Yummy-Jekyll-Theme
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://blackpencil2019.github.io/New-Yummy-Jekyll-Theme
+url: https://blackpencil2019.github.io
 date_format: "ordinal"
 title: My blog
 subtitle: "New-Yummy-Jekyll-Theme"
@@ -74,6 +74,7 @@ repository: blackpencil2019/New-Yummy-Jekyll-Theme
 effect:
     fireworks: false
     canvas_nest: true
+    live2d: false
     
 # ---------------- #
 #    Navigation    #
