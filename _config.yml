@@ -19,7 +19,7 @@ remote_theme: blackpencil2019/New-Yummy-Jekyll-Theme
 # ---------------- #
 #   Main Configs   #
 # ---------------- #
-baseurl: /
+baseurl: /a
 url: https://blackpencil2019.github.io/New-Yummy-Jekyll-Theme
 date_format: "ordinal"
 title: My blog
