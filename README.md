@@ -20,6 +20,7 @@
 ### 2020-02-29
 
 * 添加了Live2D看板娘
+* 解决了由于部署在username/repository下而导致的feed.xml中url不正确的问题
 
 ### 2020-02-28
 
