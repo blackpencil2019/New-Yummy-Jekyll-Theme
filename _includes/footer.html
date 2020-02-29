@@ -95,28 +95,24 @@
     {% endif %}
     
     {% if site.effect.live2d %}
-    <div class="pio-container right mobile-hidden" style="right:-75px">
-        <div class="pio-action"></div>
+    <div class="pio-container" style="right:-9%">
+        <div class="pio-action mobile-visible"></div>
         <canvas id="pio" width="325" height="300"></canvas>
         <div class="pio-dialog" style="right:6em"></div>
-    </div>
-    <div class="pio-container right mobile-visible" style="right:-30px">
-        <div class="pio-action"></div>
-        <canvas id="pio" width="325" height="300"></canvas>
-        <div class="pio-dialog" style="right:9em"></div>
+        
     </div>
     <!-- 引用 Live2D 核心组件 -->
     <script src='{{ site.url }}/assets/js/src/live2d/static/l2d.js'></script>
-    <!-- 引用看板娘交互组件 -->
+    <!-- 引用看板娘交互组件 https://docs.paul.ren/pio/#/?id=referer -->
     <script src="{{ site.url }}/assets/js/src/live2d/static/pio.js" onload='
     var pio = new Paul_Pio({
     "mode": "fixed",
     "hidden": false,
     "content": {
         "welcome": ["欢迎来到小铅笔的铅笔盒子！", "今天天气不错，一起来玩吧！", "我是小铅笔，傲完就娇的小铅笔~~"],
-        "link": {{ site.url }}
-        "referer": "你通过 %t 找到了我~"
-        "touch": ["你在干什么？", "再摸我就报警了！", "HENTAI!", "你够了喔！"]
+        "link": "{{ site.url }}",
+        "referer": "你通过 %t 找到了我~",
+        "touch": ["你在干什么？", "再摸我就报警了！", "HENTAI!", "你够了喔！"],
         "custom": [
             {"selector": ".comment-form", "text": "欢迎参与本文评论，别发小广告噢~"},
             {"selector": ".site-header-nav a:last-child", "text": "在这里可以了解更多哦~"},
@@ -125,7 +121,7 @@
         ]
     },
     "night": "single.night()",
-    "model": ["{{ site.url }}/assets/live2d/platelet-2/model.json"]
+    "model": ["{{ site.url }}/assets/js/src/live2d/models/platelet-2/model.json"],
     "tips": true
     });'
     ></script>
