@@ -4,7 +4,7 @@
                     © 2020
                     <span title="{{ site.author}}">{{ site.author }}</span>
                     <span class="mobile-hidden">| Powered by <a href="https://jekyllrb.com/" title="Jekyll">Jekyll</a>, hosted on <a href="https://pages.github.com/" title="GitHub Pages">GitHub Pages</a></span>
-                    <a href="{{ site.url }}/{{ site.baseurl }}{{ site.subscribe_rss }}"><span class="octicon octicon-rss" style="color:orange;"></span></a>
+                    <a href="{{ site.url }}{{ site.baseurl }}{{ site.subscribe_rss }}"><span class="octicon octicon-rss" style="color:orange;"></span></a>
                     <br><li class="mobile-visible">Powered by <a href="https://jekyllrb.com/" title="Jekyll">Jekyll</a>, hosted on <a href="https://pages.github.com/" title="GitHub Pages">GitHub Pages</a></li>
                     <a href="javascript:window.scrollTo(0,0)" class="right mobile-visible">TOP</a>
             </div>
@@ -20,7 +20,7 @@
             <ul class="site-footer-links right mobile-hidden" style="position:relative;right:2%">
                 {% for nav in site.navs %}
                 <li>
-                    <a href="{{ site.url }}/{{ site.baseurl }}{{ nav.href }}" title="{{ nav.label }}" target="{{ nav.target | default: _self }}">{{ nav.label }}</a>
+                    <a href="{{ site.url }}{{ site.baseurl }}{{ nav.href }}" title="{{ nav.label }}" target="{{ nav.target | default: _self }}">{{ nav.label }}</a>
                 </li>
                 {% endfor %}
             </ul>
@@ -31,10 +31,10 @@
       <a class="gotop" href="#" title="回到顶部"><span class="octicon octicon-arrow-up"></span></a>
     </div>
     <!-- / footer -->
-    <script src="{{ site.url }}/{{ site.baseurl }}/assets/vendor/share.js/dist/js/share.min.js"></script>
-    <script src="{{ site.url }}/{{ site.baseurl }}/assets/js/geopattern.js"></script>
-    <script src="{{ site.url }}/{{ site.baseurl }}/assets/js/prism.js"></script>
-    <link rel="stylesheet" href="{{ site.url }}/{{ site.baseurl }}/assets/css/globals/prism.css">
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/vendor/share.js/dist/js/share.min.js"></script>
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/geopattern.js"></script>
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/prism.js"></script>
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/globals/prism.css">
     <script>
       jQuery(document).ready(function($) {
         // geopattern
@@ -46,25 +46,25 @@
     </script>
 
     {% if page.mermaid %}
-    <script src="{{ site.url }}/{{ site.baseurl }}/assets/js/mermaid.min.js"></script>
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
     {% endif %}
 
     {% if page.sequence %}
-    <script src="{{ site.url }}/{{ site.baseurl }}/assets/js/webfont.js"></script>
-    <script src="{{ site.url }}/{{ site.baseurl }}/assets/js/snap.svg-min.js"></script>
-    <script src="{{ site.url }}/{{ site.baseurl }}/assets/js/underscore-min.js"></script>
-    <script src="{{ site.url }}/{{ site.baseurl }}/assets/vendor/js-sequence-diagrams/dist/sequence-diagram-min.js"></script>
-    <link rel="stylesheet" href="{{ site.url }}/{{ site.baseurl }}/assets/vendor/js-sequence-diagrams/dist/sequence-diagram-min.css">
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/webfont.js"></script>
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/snap.svg-min.js"></script>
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/underscore-min.js"></script>
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/vendor/js-sequence-diagrams/dist/sequence-diagram-min.js"></script>
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/vendor/js-sequence-diagrams/dist/sequence-diagram-min.css">
     <script>
       $(".language-sequence").sequenceDiagram({theme: 'simple'});
     </script>
     {% endif %}
 
     {% if page.flow %}
-    <script src="{{ site.url }}/{{ site.baseurl }}/assets/js/raphael.min.js"></script>
-    <script src="{{ site.url }}/{{ site.baseurl }}/assets/vendor/flowchart.js/dist/flowchart.min.js"></script>
-    <script src="{{ site.url }}/{{ site.baseurl }}/assets/js/flow.js"></script>
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/raphael.min.js"></script>
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/vendor/flowchart.js/dist/flowchart.min.js"></script>
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/flow.js"></script>
     {% endif %}
 
     {% if page.mathjax %}
@@ -86,12 +86,12 @@
     </div>
     {% endif %}
     {% if site.effect.canvas_nest %}
-    <script type="text/javascript" color="0,0,0" opacity='0.5' zIndex="-2" count="99" src="{{ site.url }}/{{ site.baseurl }}/assets/js/src/canvas-nest/canvas-nest.js"></script>
+    <script type="text/javascript" color="0,0,0" opacity='0.5' zIndex="-2" count="99" src="{{ site.url }}{{ site.baseurl }}/assets/js/src/canvas-nest/canvas-nest.js"></script>
     {% endif %}
     {% if site.effect.fireworks %}
     <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
     <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
-    <script type="text/javascript" src="{{ site.url }}/{{ site.baseurl }}/assets/js/src/fireworks.js"></script>
+    <script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/assets/js/src/fireworks.js"></script>
     {% endif %}
     
     {% if site.effect.live2d %}
@@ -102,15 +102,15 @@
         
     </div>
     <!-- 引用 Live2D 核心组件 -->
-    <script src='{{ site.url }}/{{ site.baseurl }}/assets/js/src/live2d/static/l2d.js'></script>
+    <script src='{{ site.url }}{{ site.baseurl }}/assets/js/src/live2d/static/l2d.js'></script>
     <!-- 引用看板娘交互组件 https://docs.paul.ren/pio/#/?id=referer -->
-    <script src="{{ site.url }}/{{ site.baseurl }}/assets/js/src/live2d/static/pio.js" onload='
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/src/live2d/static/pio.js" onload='
     var pio = new Paul_Pio({
     "mode": "fixed",
     "hidden": false,
     "content": {
         "welcome": ["欢迎来到小铅笔的铅笔盒子！", "今天天气不错，一起来玩吧！", "我是小铅笔，傲完就娇的小铅笔~~"],
-        "link": "{{ site.url }}/{{ site.baseurl }}",
+        "link": "{{ site.url }}{{ site.baseurl }}",
         "referer": "你通过 %t 找到了我~",
         "touch": ["你在干什么？", "再摸我就报警了！", "HENTAI!", "你够了喔！"],
         "custom": [
@@ -121,7 +121,7 @@
         ]
     },
     "night": "single.night()",
-    "model": ["{{ site.url }}/{{ site.baseurl }}/assets/js/src/live2d/models/platelet-2/model.json"],
+    "model": ["{{ site.url }}{{ site.baseurl }}/assets/js/src/live2d/models/platelet-2/model.json"],
     "tips": true
     });'
     ></script>
